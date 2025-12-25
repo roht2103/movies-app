@@ -3,7 +3,7 @@ import "./App.css";
 import MovieCard from "./movieCard";
 import { Search, ChevronLeft, ChevronRight } from "lucide-react";
 
-const API_URL = `http://www.omdbapi.com?apikey=${
+const API_URL = `https://www.omdbapi.com?apikey=${
   import.meta.env.VITE_OMDB_API_KEY
 }`;
 
