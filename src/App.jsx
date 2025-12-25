@@ -3,8 +3,9 @@ import "./App.css";
 import MovieCard from "./movieCard";
 import { Search, ChevronLeft, ChevronRight } from "lucide-react";
 
-// c6cf290f
-const API_URL = "http://www.omdbapi.com?apikey=c6cf290f";
+const API_URL = `http://www.omdbapi.com?apikey=${
+  import.meta.env.VITE_OMDB_API_KEY
+}`;
 
 const App = () => {
   const [movies, setMovies] = useState([]);
